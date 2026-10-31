@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Check Eligibility | BKL Association</title>
+  <meta name="description"
+    content="Check your Home Loan and Loan Against Property eligibility with BKL Association. Fast, simple 3-step inquiry with expert guidance. Call 8072294235.">
+  <meta property="og:title" content="Check Eligibility | BKL Association">
+  <meta property="og:description"
+    content="Start an initial loan inquiry with BKL Association. Simple 3-step evaluation for Home Loan and LAP.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.png">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="BKL Association home">
+        <img src="assets/logo.png" alt="BKL Association Logo" width="104" height="52">
+        <span class="logo-text">
+          <span class="logo-bkl">BKL</span>
+          <span class="logo-assoc">ASSOCIATION</span>
+        </span>
+      </a>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" data-i18n="nav_home">Home</a>
+        <a href="home-loan.html" data-i18n="nav_homeloan">Home Loan</a>
+        <a href="lap.html" data-i18n="nav_lap">Loan Against Property</a>
+        <a href="products.html" data-i18n="nav_products">Loan Products</a>
+        <a href="index.html#calculator" data-i18n="nav_calc">Loan Calculator</a>
+        <a href="apply.html" aria-current="page" data-i18n="nav_apply">Check Eligibility</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-toggle" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn is-active" id="lang-btn-en" data-lang-btn="en"
+            onclick="setLanguage('en')" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" id="lang-btn-ta" data-lang-btn="ta" onclick="setLanguage('ta')"
+            aria-pressed="false">தமிழ்</button>
+        </div>
+        <a class="header-phone" href="tel:8072294235">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          8072294235
+        </a>
+        <a class="btn btn-primary btn-sm" href="tel:8072294235" data-i18n="btn_call">Call Now</a>
+        <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="site-nav"
+          aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="apply_page_eyebrow">Eligibility Inquiry &bull; 3-Step Wizard</p>
+        <h1 data-i18n="apply_page_title">Check Your Loan Eligibility</h1>
+        <p class="hero-copy" data-i18n="apply_page_copy">Complete this simple 3-step initial inquiry to explore loan
+          options tailored to your income and financial profile. No paperwork upload is required at this stage.</p>
+      </div>
+    </section>
+
+    <!-- Multi-Step Inquiry Form Section -->
+    <section class="section section-alt">
+      <div class="wrap">
+        <form class="form-shell" data-eligibility-form novalidate>
+          <!-- Progress Stepper Indicator -->
+          <ol class="progress" aria-label="Inquiry progress">
+            <li class="is-active" data-prog="1">
+              <span>1.</span> Loan Details
+            </li>
+            <li data-prog="2">
+              <span>2.</span> Applicant Details
+            </li>
+            <li data-prog="3">
+              <span>3.</span> Review &amp; Submit
+            </li>
+          </ol>
+
+          <!-- Success / Demo Confirmation Message Box -->
+          <div class="form-success" role="status" tabindex="-1">
+            <div
+              style="width: 48px; height: 48px; border-radius: 50%; background: var(--success-bg); border: 2px solid var(--success); color: var(--success); display: grid; place-items: center; margin: 0 auto 1rem;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3>Inquiry Prepared Successfully!</h3>
+            <p>
+              Your initial loan inquiry has been generated. In this front-end demo, your information is processed
+              securely on your device. To finalize and discuss your application with our team, please call BKL
+              Association directly:
+            </p>
+            <div style="margin: 1.5rem 0 1rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 0.75rem;">
+              <a class="btn btn-primary" href="tel:8072294235">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                Call Advisor Now: 8072294235
+              </a>
+              <button class="btn btn-secondary" type="button" data-reset>Start a New Inquiry</button>
+            </div>
+            <p class="muted" style="font-size: 0.8rem; margin-top: 0.75rem;">
+              *Note: This inquiry does not constitute a formal loan sanction or approval guarantee.
+            </p>
+          </div>
+
+          <!-- STEP 1: Loan Details -->
+          <div data-step="1">
+            <h2 tabindex="-1" style="font-size: 1.35rem; margin-bottom: 1.25rem;">Step 1: Loan Requirements</h2>
+
+            <div class="form-row">
+              <span id="loan-type-label"
+                style="display: block; font-weight: 650; margin-bottom: 0.4rem; color: var(--primary-navy); font-size: 0.92rem;">Select
+                Loan Type</span>
+              <div class="choice-group two" role="radiogroup" aria-labelledby="loan-type-label">
+                <label class="choice">
+                  <input type="radio" name="loanType" value="Home Loan" checked required>
+                  <span>Home Loan (₹5L to ₹1Cr)</span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="loanType" value="Loan Against Property">
+                  <span>Loan Against Property (₹5L to ₹75L)</span>
+                </label>
+              </div>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="amount">Desired Loan Amount (₹)</label>
+              <input id="amount" name="amount" type="text" inputmode="numeric" placeholder="e.g. 30,00,000" required>
+              <span class="input-hint">Minimum loan assistance starts from ₹50,000.</span>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-row">
+              <span id="employment-label"
+                style="display: block; font-weight: 650; margin-bottom: 0.4rem; color: var(--primary-navy); font-size: 0.92rem;">Employment
+                Classification</span>
+              <div class="choice-group two" role="radiogroup" aria-labelledby="employment-label">
+                <label class="choice">
+                  <input type="radio" name="employment" value="Salaried" checked required>
+                  <span>Salaried Employee</span>
+                </label>
+                <label class="choice">
+                  <input type="radio" name="employment" value="Self-Employed">
+                  <span>Self-Employed / Business Owner</span>
+                </label>
+              </div>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="propertyStatus">Current Property Status</label>
+              <select id="propertyStatus" name="propertyStatus" required>
+                <option value="">Select property ownership/purchase status</option>
+                <option value="Already own titled property">Already own titled property</option>
+                <option value="Identified property & planning purchase">Identified property &amp; planning purchase
+                </option>
+                <option value="Own plot, planning self-construction">Own plot, planning self-construction</option>
+                <option value="Currently exploring / other">Currently exploring / other</option>
+              </select>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-nav">
+              <span></span>
+              <button class="btn btn-primary" type="button" data-next>Next: Applicant Details &rarr;</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: Basic Applicant Details -->
+          <div data-step="2" hidden>
+            <h2 tabindex="-1" style="font-size: 1.35rem; margin-bottom: 1.25rem;">Step 2: Basic Applicant Information
+            </h2>
+
+            <div class="form-row">
+              <label for="name">Full Name (as per official identity)</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your full name" required>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="phone">10-Digit Mobile Number</label>
+              <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel"
+                placeholder="e.g. 9876543210" maxlength="14" required>
+              <span class="input-hint">We will contact you regarding this inquiry. Indian mobile numbers only.</span>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="city">City / District</label>
+              <input id="city" name="city" type="text" autocomplete="address-level2"
+                placeholder="e.g. Chennai, Coimbatore, Madurai, Salem" required>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="income">Approximate Monthly Take-Home Income</label>
+              <select id="income" name="income" required>
+                <option value="">Select your monthly income bracket</option>
+                <option value="Up to ₹50,000">Up to ₹50,000</option>
+                <option value="₹50,001 to ₹1,00,000">₹50,001 to ₹1,00,000</option>
+                <option value="₹1,00,001 to ₹2,00,000">₹1,00,001 to ₹2,00,000</option>
+                <option value="Above ₹2,00,000">Above ₹2,00,000</option>
+              </select>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="emi">Existing Monthly EMI Obligations</label>
+              <select id="emi" name="emi" required>
+                <option value="">Select existing monthly EMI commitments</option>
+                <option value="None">None (Zero active loan EMIs)</option>
+                <option value="Up to ₹20,000">Up to ₹20,000</option>
+                <option value="₹20,001 to ₹50,000">₹20,001 to ₹50,000</option>
+                <option value="Above ₹50,000">Above ₹50,000</option>
+              </select>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-nav">
+              <button class="btn btn-secondary" type="button" data-prev>&larr; Back: Loan Details</button>
+              <button class="btn btn-primary" type="button" data-next>Next: Review Inquiry &rarr;</button>
+            </div>
+          </div>
+
+          <!-- STEP 3: Review and Confirmation -->
+          <div data-step="3" hidden>
+            <h2 tabindex="-1" style="font-size: 1.35rem; margin-bottom: 0.5rem;">Step 3: Review &amp; Confirm Inquiry
+            </h2>
+            <p class="muted">Please review your submitted loan parameters below. You can return to previous steps to
+              adjust your inputs before finalizing.</p>
+
+            <ul class="summary-list" data-summary aria-label="Inquiry summary review">
+              <!-- Dynamically populated by script.js -->
+            </ul>
+
+            <div class="form-row" style="margin-top: 1.5rem;">
+              <label class="consent">
+                <input id="consent" name="consent" type="checkbox" required>
+                <span>I confirm that the details provided are accurate to the best of my knowledge, and I agree to be
+                  contacted by BKL Association regarding this loan inquiry.</span>
+              </label>
+              <p class="field-error"></p>
+            </div>
+
+            <div class="form-nav">
+              <button class="btn btn-secondary" type="button" data-prev>&larr; Back to Edit</button>
+              <button class="btn btn-primary" type="submit">Submit Loan Inquiry &rarr;</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Privacy & Security Notice Card -->
+        <div
+          style="max-width: 760px; margin: 2rem auto 0; background: var(--white); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.25rem 1.5rem;">
+          <h4
+            style="margin: 0 0 0.35rem; color: var(--primary-navy); font-size: 0.95rem; display: flex; align-items: center; gap: 0.4rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+            Customer Privacy &amp; Data Security Guarantee
+          </h4>
+          <p class="muted" style="margin: 0; font-size: 0.85rem; line-height: 1.55;">
+            No Aadhaar number, PAN card photocopy, OTP, password, net-banking credential, bank account number, or
+            financial document upload is ever requested on this website. This inquiry is an informational coordination
+            tool. All sensitive document collection is handled directly and securely during personal consultation with
+            our team.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sticky Mobile Call & Eligibility Bar -->
+  <div class="mobile-call-bar" aria-label="Mobile quick actions">
+    <a class="btn btn-secondary btn-sm" href="tel:8072294235">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+        aria-hidden="true">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+      </svg>
+      Call Now
+    </a>
+    <a class="btn btn-primary btn-sm" href="apply.html" data-i18n="nav_apply">Check Eligibility</a>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a href="index.html" class="logo" aria-label="BKL Association home">
+          <img src="assets/logo.png" alt="BKL Association Logo" width="104" height="52" loading="lazy">
+          <span class="logo-text">
+            <span class="logo-bkl">BKL</span>
+            <span class="logo-assoc">ASSOCIATION</span>
+          </span>
+        </a>
+        <p style="margin-top: 1rem;">Simple, confidential loan eligibility inquiries for Home Loans and Loans Against
+          Property. Professional advisory across Tamil Nadu.</p>
+        <p><strong>Direct Helpline:</strong> <a href="tel:8072294235">8072294235</a></p>
+        <p><strong>Email:</strong> <a href="mailto:teambklassociation0003@gmail.com">teambklassociation0003@gmail.com</a></p>
+      </div>
+
+      <div>
+        <h3>Quick Navigation</h3>
+        <div class="footer-links">
+          <a href="index.html" data-i18n="nav_home">Home</a>
+          <a href="home-loan.html" data-i18n="nav_homeloan">Home Loan</a>
+          <a href="lap.html" data-i18n="nav_lap">Loan Against Property</a>
+          <a href="products.html" data-i18n="nav_products">Loan Products</a>
+          <a href="index.html#calculator" data-i18n="nav_calc">Loan Calculator</a>
+          <a href="apply.html" aria-current="page" data-i18n="nav_apply">Check Eligibility</a>
+          <a href="about.html" data-i18n="nav_about">About Us</a>
+          <a href="contact.html" data-i18n="nav_contact">Contact Us</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Inquiry Note</h3>
+        <p>This page serves as a front-end initial inquiry wizard. Submitting your details does not constitute a formal
+          loan sanction or approval commitment. Lender terms apply.</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <p class="footer-tag" data-i18n="footer_tag">QUICK APPROVAL &bull; MINIMUM DOCUMENTATION &bull; HASSLE FREE
+        PROCESS</p>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <p>*Terms &amp; Conditions Apply. <a href="terms.html" style="color: var(--primary-gold); text-decoration: underline;">Read Terms &amp; Conditions</a>. All loan approvals, interest rates, eligibility criteria, and benefits are
+        determined exclusively by the lending institution upon submission of complete verifiable documentation.</p>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" data-back-to-top aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      aria-hidden="true">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <script src="script.js" defer></script>
+  <script src="chatbot.js" defer></script>
+</body>
+
+</html>
